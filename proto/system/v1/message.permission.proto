@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+package proto.system.v1;
+option go_package = "system/v1;pb_sys_v1";
+
+import "global/v1/message.http_body.proto";
+
+message Permission {
+  string code = 1;
+  string group_code = 2;
+  string name = 3;
+  int64 create_time = 4;
+  int64 update_time = 5;
+}
+
+message PermissionGet {
+  message Request {
+    string code = 1;
+  }
+  message Response {
+    Permission permission = 1;
+  }
+}
+
+message PermissionListItem {
+    Permission permission = 1;
+    string group_name = 2;
+}
+
+message PermissionList {
+  message Request {
+    string code = 1;
+    string name = 2;
+    global.v1.Pagination pagination = 3;
+  }
+  message Response {
+    int64 total = 1;
+    repeated PermissionListItem list = 2;
+  }
+}
+
+

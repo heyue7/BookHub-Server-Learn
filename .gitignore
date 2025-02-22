@@ -23,3 +23,11 @@ go.work.sum
 
 # env file
 .env
+
+*.log
+.pid
+*.s
+.idea/
+upload/
+.DS_Store
+*.csv

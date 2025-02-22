@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package proto.system.v1;
+option go_package = "system/v1;pb_sys_v1";
+
+import "system/v1/message.permission.proto";
+
+service Getter {
+  rpc PermissionGet(system.v1.PermissionGet.Request) returns (system.v1.PermissionGet.Response);
+  rpc PermissionList(system.v1.PermissionList.Request) returns (system.v1.PermissionList.Response);
+}

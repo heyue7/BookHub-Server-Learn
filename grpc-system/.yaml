@@ -1,0 +1,9 @@
+env: "development"
+
+server:
+  server_name: "grpc-system"
+  addr: "localhost:8080"
+
+db:
+  driver: "mysql"
+  master: "bookhub:085eb7a8eb1@tcp(120.77.178.121:33061)/bookhub"
