@@ -1,6 +1,7 @@
 package srv_db
 
 import (
+	_ "github.com/go-sql-driver/mysql" // 导入 MySQL 驱动
 	"github.com/xormplus/xorm"
 	"github.com/xormplus/xorm/log"
 	"os"

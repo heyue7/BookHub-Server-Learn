@@ -1,6 +1,6 @@
 package srv_db
 
 type DBConfig struct {
-	Driver string
-	Master string
+	Driver string `yaml:"driver"`
+	Master string `yaml:"master"`
 }

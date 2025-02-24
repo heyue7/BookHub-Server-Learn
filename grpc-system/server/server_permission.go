@@ -8,7 +8,7 @@ import (
 	"google.golang.org/grpc/status"
 )
 
-func (s server) PermissionGet(ctx context.Context, req *pb_sys_v1.PermissionGet_Request) (resp *pb_sys_v1.PermissionGet_Response, err error) {
+func (s Server) PermissionGet(ctx context.Context, req *pb_sys_v1.PermissionGet_Request) (resp *pb_sys_v1.PermissionGet_Response, err error) {
 	resp = &pb_sys_v1.PermissionGet_Response{}
 
 	if req.GetCode() == "" {

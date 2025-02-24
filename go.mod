@@ -3,6 +3,7 @@ module github.com/heyue7/BookHub-Server-Learn
 go 1.23.4
 
 require (
+	github.com/go-sql-driver/mysql v1.9.0
 	github.com/xormplus/xorm v0.0.0-20210822100304-4e1d4fcc1e67
 	google.golang.org/grpc v1.70.0
 	google.golang.org/protobuf v1.35.2
@@ -10,6 +11,7 @@ require (
 )
 
 require (
+	filippo.io/edwards25519 v1.1.0 // indirect
 	github.com/Chronokeeper/anyxml v0.0.0-20160530174208-54457d8e98c6 // indirect
 	github.com/CloudyKit/fastprinter v0.0.0-20200109182630-33d98a066a53 // indirect
 	github.com/CloudyKit/jet v2.1.2+incompatible // indirect
@@ -19,7 +21,6 @@ require (
 	github.com/clbanning/mxj v1.8.4 // indirect
 	github.com/fatih/structs v1.1.0 // indirect
 	github.com/fsnotify/fsnotify v1.8.0 // indirect
-	github.com/go-sql-driver/mysql v1.9.0 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/mattn/go-sqlite3 v1.14.24 // indirect
 	github.com/syndtr/goleveldb v1.0.0 // indirect

@@ -1,4 +1,4 @@
-package grpc_system
+package main
 
 import (
 	"flag"
