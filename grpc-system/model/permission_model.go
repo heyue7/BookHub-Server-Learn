@@ -41,8 +41,8 @@ func (m *PermissionModel) BeforeUpdate() {
 	}
 }
 
-func (m *PermissionModel) Proto() pb_sys_v1.Permission {
-	return pb_sys_v1.Permission{
+func (m *PermissionModel) Proto() *pb_sys_v1.Permission {
+	return &pb_sys_v1.Permission{
 		Code:       m.Code,
 		GroupCode:  m.GroupCode,
 		Name:       m.Name,

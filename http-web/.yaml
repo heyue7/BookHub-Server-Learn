@@ -1,0 +1,8 @@
+env: "development"
+
+server:
+  name: "http-web"
+  addr: "127.0.0.1:13001"
+
+services:
+  grpc-system: "127.0.0.1:8001"

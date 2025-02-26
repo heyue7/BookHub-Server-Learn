@@ -32,5 +32,9 @@ func (s Server) PermissionGet(ctx context.Context, req *pb_sys_v1.PermissionGet_
 		return
 	}
 
+	resp = &pb_sys_v1.PermissionGet_Response{
+		Permission: m.Proto(),
+	}
+
 	return
 }

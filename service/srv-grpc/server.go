@@ -15,7 +15,7 @@ type Server struct {
 	lis  *net.Listener
 }
 
-func New(conf Config) *Server {
+func NewServer(conf Config) *Server {
 	return &Server{
 		conf:   conf,
 		Server: grpc.NewServer(),

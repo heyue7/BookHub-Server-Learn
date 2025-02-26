@@ -2,7 +2,7 @@ env: "development"
 
 server:
   server_name: "grpc-system"
-  addr: "localhost:8080"
+  addr: "localhost:8001"
 
 db:
   driver: "mysql"

@@ -34,7 +34,7 @@ func init() {
 }
 
 func main() {
-	s := srv_grpc.New(config.Conf.Server)
+	s := srv_grpc.NewServer(config.Conf.Server)
 
 	pb_sys_v1.RegisterGetterServer(s.Server, &server.Server{})
 
